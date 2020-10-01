@@ -469,5 +469,6 @@ The generated client uses [Apollo](https://www.apollographql.com/)'s
 [`subscriptions-transport-ws`](https://github.com/apollographql/subscriptions-transport-ws) for executing **Subscriptions**
 
 Subscriptions are wrapped in [RxJs](https://github.com/ReactiveX/rxjs)' `Observable` which is chained
+
 to the `SubscriptionClient` so that a connection is opened when you subscribe to the first subscription,
 shared among all subscriptions and closed when you unsubscribe from the last one.
